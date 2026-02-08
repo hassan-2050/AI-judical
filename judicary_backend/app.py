@@ -17,7 +17,7 @@ if _backend_dir not in sys.path:
 from dotenv import load_dotenv
 from flask import Flask, jsonify
 from flask_cors import CORS
-from flask_mongoengine import MongoEngine
+import mongoengine
 
 from config import get_config
 
@@ -41,9 +41,8 @@ def create_app():
     app.config.from_object(cfg)
 
     # Initialize extensions
-    db = MongoEngine()
-    db.init_app(app)
-    logger.info("MongoDB configured (lazy connect): %s", cfg.MONGODB_URL[:50] + "...")
+    mongoengine.connect(host=cfg.MONGODB_URL)
+    logger.info("MongoDB connected: %s", cfg.MONGODB_URL[:50] + "...")
 
     CORS(app, origins=cfg.CORS_ORIGINS, supports_credentials=True)
 
