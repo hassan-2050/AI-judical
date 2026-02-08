@@ -30,7 +30,7 @@ const features = [
   {
     icon: <FiDatabase className="w-8 h-8" />,
     title: "Case Database",
-    desc: "Browse the complete database of Pakistani judiciary cases from Supreme Court and High Courts.",
+    desc: "Browse the complete database of Pakistan legal cases from Supreme Court and High Courts.",
     href: "/cases",
   },
   {
@@ -84,8 +84,8 @@ export default function HomePage() {
       <section className="bg-gradient-to-br from-judiciary-dark via-judiciary-navy to-judiciary-blue text-white">
         <div className="max-w-7xl mx-auto px-4 py-24 sm:py-32 text-center">
           <h1 className="text-4xl sm:text-6xl font-display font-bold tracking-tight mb-6">
-            Pakistan Judiciary
-            <span className="text-judiciary-gold"> Case System</span>
+            Munsif
+            <span className="text-judiciary-gold"> AI</span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-10">
             A comprehensive platform to search, browse, and analyze court cases
@@ -155,8 +155,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-judiciary-dark text-gray-400 py-8">
         <div className="max-w-7xl mx-auto px-4 text-center text-sm">
-          <p>© {new Date().getFullYear()} Pakistan Judiciary Case System. All rights reserved.</p>
-          <p className="mt-1">Built with Next.js, Flask, and MongoDB</p>
+          <p>© {new Date().getFullYear()} Munsif AI. All rights reserved.</p>
         </div>
       </footer>
     </div>

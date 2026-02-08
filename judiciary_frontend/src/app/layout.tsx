@@ -11,9 +11,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Judiciary System | Pakistan Court Case Database",
+  title: "Munsif AI | Pakistan Legal Case Database",
   description:
-    "Search, browse, and analyze Pakistani judiciary case data scraped from Supreme Court, High Courts, and more.",
+    "Search, browse, and analyze Pakistani legal case data from Supreme Court, High Courts, and more — powered by AI.",
 };
 
 export default function RootLayout({

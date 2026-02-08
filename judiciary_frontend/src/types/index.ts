@@ -1,4 +1,4 @@
-/* ---- Types for the Judiciary System ---- */
+/* ---- Types for Munsif AI ---- */
 
 export interface Case {
   id: string;
