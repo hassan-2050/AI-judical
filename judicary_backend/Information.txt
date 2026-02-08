@@ -1,0 +1,7 @@
+Project Name : Judiciary Automation
+Cluster: JudiciaryCluster
+username : Alucard008
+password : UiIhOdwPy1xuM8jy
+connectionString: mongodb+srv://Alucard008:UiIhOdwPy1xuM8jy@judiciarycluster.4jhslpg.mongodb.net/
+
+command_for_running : python -m flask --app app.py --debug run

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# Node
+node_modules/
+.next/
+.vercel/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credentials
+google_bucket_credentials.json
+
+# Uploads
+uploads/
+
+# Temp / Debug scripts
+*.log
+temp/
+fix_statuses.py
+debug_scraper.py
+check_db.py
+db_check.py
+bulk_import.py
+run_scrapers.py

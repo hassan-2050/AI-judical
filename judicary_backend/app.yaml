@@ -1,0 +1,16 @@
+runtime: python310  # Specify the Python version
+env: standard
+
+entrypoint: python -m flask run --host=0.0.0.0 --port=$PORT
+
+handlers:
+- url: /static
+  static_dir: static/
+- url: /.*
+  script: auto
+
+env_variables:
+  jwtSecretKey: '12345WakeUpToReality54321'
+  BUCKET_NAME: "judiciary_bucket"
+  FLASK_APP: app.py  # Ensure this matches your Flask application's entry point file
+  FLASK_ENV: production

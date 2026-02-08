@@ -1,0 +1,6 @@
+blis==0.9.1
+└── numpy [required: >=1.15.0, installed: 1.26.4]
+pipdeptree==2.22.0
+├── packaging [required: >=23.1, installed: 24.1]
+└── pip [required: >=23.1.2, installed: 24.0]
+setuptools==59.6.0
